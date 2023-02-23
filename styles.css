@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background: linear-gradient(#d94343, #D94375);
+    height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+
+header #logo{
+    display: flex;
+    align-items: center;
+}
+
+header #logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 4rem;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+header nav ul{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li{
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1.6rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.fa-calendar{
+    font-size: 1.6rem;
+    margin-left: 3px;
+}
+
+
+header nav ul li:hover{
+    background-color: #e91e63;
+    transition: all .5s;
+}
+
+main{
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main #home{
+    background-image: url(./images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+#home h2{
+    width: 50%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 2px black;
+    line-height: 1.5;
+    word-spacing: 0.5rem;
+    margin-top: 1rem;
+}
+
+#home a{
+    width: 30%;
+}
+#home button{
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    color: rgb(233, 30, 99);
+    background-color: rgb(255 255 255 / 50%);
+    border: 3px solid rgb(233, 30, 99);
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+#home button:hover{
+    color: #301934;
+    background-color: white;
+    border: 3px solid #301934;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+main #about{
+    background-color: #301934;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+}
+
+main #about h2{
+    font-size: 2.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 0.1rem;
+    margin-top: 0;
+}
+
+#about #image{
+    width: 40%;
+}
+#about #info{
+    width: 50%;
+}
+
+#about #info p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#about #image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 0px 20px #9e9e9e;
+}
+#feed{
+    background-image: url(./images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+}
+
+#feed #block-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#feed #block-list .block{
+    width: 30%;
+    text-align: center;
+    background-color: beige;
+    padding: 1rem;
+}
+
+#feed #block-list .block img{
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+#feed #block-list .block h3{
+    font-size: 1.6rem;
+}
+
+#gallery #gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#gallery #gallery-list .img-block{
+    width: 30%;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+}
+
+#gallery #gallery-list img{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+#gallery> h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #301934;
+    margin-bottom: 0;
+    border-bottom: 3px solid #191970;
+}
+
+#booking{
+    background-image: url(./images/txr1.jpg);
+    color: white;
+}
+#booking> h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    margin-bottom: 0;
+    border-bottom: 3px solid #191970;
+}
+
+
+
+/* Contact info */
+#booking #block-list{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+#booking #block-list div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#booking #block-list .contact-block> h2{
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 1.5;
+    text-shadow: 1px 2px black;
+}
+
+#booking #block-list .contact-block label{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    width: 50%;
+}
+
+#booking #block-list form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    width: 50%;
+    background-color: #8bc34adb;
+    padding: 2rem 0;
+    border: 2px solid #9e9e9e;
+    border-left: 10px solid beige;
+}
+
+
+
+#booking #block-list .contact-block input{
+    border-bottom: 1px solid blue;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1170px) and (max-width: 1350px){
+    header nav{
+        width: 55%;
+    }
+    header nav ul li {
+        font-size: 1.3rem;
+        padding: 1.3rem;
+    }
+    .fa-calendar{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 920px) and (max-width: 1169px){
+    header nav{
+        width: 60%;
+    }
+    header nav ul li {
+        font-size: 1.0rem;
+        padding: 1.0rem;
+    }
+    .fa-calendar{
+        font-size: 1.0rem;
+    }
+    #home h2{
+        width: 70%;
+    }
+    /* Feed Styles  */
+    #feed #block-list{
+        row-gap: 1rem;
+    }
+    
+    #feed #block-list .block {
+        width: 40%;
+    }
+    /* Book a table styles  */
+    #booking #block-list{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width: 820px) and (max-width: 919px){
+    header #logo{
+        width: 20%
+    }
+    header nav{
+        width: 60%;
+    }
+    header nav ul li {
+        font-size: 1.0rem;
+        padding: 1.0rem;
+    }
+    .fa-calendar{
+        font-size: 1.0rem;
+    }
+    /* home styles */
+    #home h2{
+        width: 70%;
+    }
+
+    /* about styles */
+    main #about{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    #about #image {
+        width: 80%;
+    }
+    #about #info {
+        width: 80%;
+        text-align: left;
+    }
+    /* Feed Styles  */
+    #feed #block-list{
+        row-gap: 1rem;
+    }
+    
+    #feed #block-list .block {
+        width: 45%;
+    }
+    /* Gallery Styles  */
+    #gallery #gallery-list .img-block {
+        width: 45%;
+    }
+    #gallery #gallery-list{
+        padding: 1rem 0;
+    }
+    /* Book a table styles  */
+    #booking #block-list{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width: 710px) and (max-width: 819px){
+    header #logo{
+        width: 20%
+    }
+    header nav{
+        width: 70%;
+    }
+    header nav ul li {
+        font-size: 1.0rem;
+        padding: 1.0rem;
+    }
+    .fa-calendar{
+        font-size: 1.0rem;
+    }
+    #home h2{
+        width: 70%;
+    }
+    /* about styles */
+    main #about{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    #about #image {
+        width: 80%;
+    }
+    #about #info {
+        width: 80%;
+        text-align: left;
+    }
+    /* Feed Styles  */
+    #feed #block-list{
+        row-gap: 1rem;
+    }
+    
+    #feed #block-list .block {
+        width: 45%;
+    }
+    /* Gallery Styles  */
+    #gallery #gallery-list .img-block {
+        width: 48%;
+    }
+    #gallery #gallery-list{
+        padding: 0.5rem 0;
+        justify-content: space-evenly;
+    }
+    /* Book a table styles  */
+    #booking #block-list{
+        justify-content: space-around;
+    }
+    #booking #block-list div{
+        width: 35%;
+    }
+    #booking #block-list .contact-block> h2{
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 709px){
+    header #logo{
+        display: none;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav ul li {
+        font-size: 1.0rem;
+        padding: 1.0rem;
+    }
+    .fa-calendar{
+        font-size: 1.0rem;
+    }
+    main #home{
+        padding: 4rem 0;
+    }
+    #home h2{
+        width: 70%;
+        font-size: 2.5rem;
+    }
+    /* about styles */
+    main #about{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    #about #image {
+        width: 80%;
+    }
+    #about #info {
+        width: 80%;
+        text-align: left;
+    }
+    /* Feed Styles  */
+    #feed #block-list{
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    #feed #block-list .block {
+        width: 90%;
+    }
+    #feed{
+        padding: 1rem 0;
+    }
+
+    /* Gallery Styles  */
+    #gallery #gallery-list .img-block {
+        width: 90%;
+    }
+    #gallery #gallery-list{
+        padding: 0.5rem 0;
+        justify-content: space-evenly;
+    }
+    /* Book a table styles  */
+    #booking #block-list{
+        justify-content: space-around;
+    }
+    #booking #block-list div{
+        width: 35%;
+    }
+    #booking #block-list .contact-block> h2{
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 629px){
+    header #logo{
+        display: none;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav ul li {
+        font-size: 1.0rem;
+        padding: 1.0rem;
+    }
+    .fa-calendar{
+        font-size: 1.0rem;
+    }
+    main #home{
+        padding: 2rem 0;
+    }
+    #home h2{
+        width: 70%;
+        font-size: 2.5rem;
+    }
+    #home a{
+        width: 45%
+    }
+    /* about styles */
+    main #about{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    #about #image {
+        width: 80%;
+    }
+    #about #info {
+        width: 80%;
+        text-align: left;
+    }
+    main #about h2{
+        font-size: 2rem;
+    }
+    #about #info p {
+        font-size: 1.3rem;
+    }
+    /* Feed Styles  */
+    #feed #block-list{
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    #feed #block-list .block {
+        width: 90%;
+    }
+    #feed{
+        padding: 1rem 0;
+    }
+    /* Gallery Styles  */
+    #gallery #gallery-list .img-block {
+        width: 95%;
+    }
+    #gallery #gallery-list{
+        padding: 0.5rem 0;
+        justify-content: space-evenly;
+    }
+    /* Book a table styles  */
+    #booking #block-list{
+        justify-content: space-around;
+    }
+    #booking #block-list div{
+        width: 35%;
+    }
+    #booking #block-list .contact-block> h2{
+        font-size: 2rem;
+    }
+    #booking #block-list .contact-block label{
+        width: 90%;
+    }
+    #booking #block-list form{
+        width: 55%;
+    }
+
+}
